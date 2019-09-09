@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>专项反制工作系统</title>
+  <link rel="stylesheet" href="static/css/element.css">
+  <script src="static/js/vue.js"></script>
+  <script src="static/js/element.js"></script>
+  <script src="static/js/echarts.js"></script>
+  <script src="static/js/jquery.js"></script>
+  <style>
+    .el-table .cell,
+    .el-table th div {
+      overflow: unset !important;
+    }
+
+    .el-dialog {
+      z-index: 2005 !important;
+      position: fixed !important;
+      top: 2% !important;
+      left: 40% !important;
+    }
+
+    .v-modal {
+      display: none !important;
+    }
+
+    body {
+      background: rgba(243, 246, 247, 1);
+      overflow-x: hidden;
+      min-width: 1600px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+
+    .el-tabs__active-bar {
+      transition: -webkit-transform 0s cubic-bezier(.645, .045, 055, 1) !important;
+      transition: transform 0s cubic-bezier(.645, .045, 055, 1) !important;
+      transition: transform 0s cubic-bezier(.645, .045, 055, 1) !important;
+      transition: -webkit-transform 0s cubic-bezier(.645, .045, 055, 1) !important;
+    }
+
+    .el-tabs__active-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: #409EFF;
+      z-index: 1;
+      -webkit-transition: none !important;
+      transition: none !important;
+      transition: none !important;
+      transition: transform 0s cubic-bezier(.645, .045, .355, 1), -webkit-transform 0s cubic-bezier(.645, .045, .355, 1) !important;
+      list-style: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" height='100%'></div>
+</body>
+<script>
+  window.onload = function () {
+    let yucai = document.querySelector("#app .sidebar ul");
+    let yucaiLast = yucai.lastElementChild;
+    yucaiLast.onclick = function () {
+      window.open("http://jwp.yuqing.pro:89/Index.html#/Yucai", "_blank");
+    }
+  }
+</script>
+
+</html>
